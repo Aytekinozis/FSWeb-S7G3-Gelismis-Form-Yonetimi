@@ -13,7 +13,7 @@ function App() {
   }, [list]);
   return (
     <div className="App">
-      <Form list={list} setlist={setList} adduser={addUser} />
+      <Form id="form" list={list} setlist={setList} adduser={addUser} />
       <div>
         {list.map((item) => {
           return <li>{item.fullname}</li>;
