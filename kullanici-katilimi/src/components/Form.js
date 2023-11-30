@@ -90,7 +90,7 @@ const Form = (props) => {
       <FormGroup>
         <Label>Fullname:</Label>
         <Input
-          invalid
+          invalid={!!errState.fullname}
           type="text"
           value={formState.fullname}
           name="fullname"
@@ -101,7 +101,7 @@ const Form = (props) => {
       <FormGroup>
         <Label>Email:</Label>
         <Input
-          invalid
+          invalid={!!errState.email}
           type="email"
           value={formState.email}
           name="email"
@@ -112,7 +112,7 @@ const Form = (props) => {
       <FormGroup>
         <Label>Password:</Label>
         <Input
-          invalid
+          invalid={!!errState.password}
           type="password"
           value={formState.password}
           name="password"
